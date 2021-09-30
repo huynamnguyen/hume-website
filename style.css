@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 *
 {
   margin: 0;
@@ -25,7 +26,7 @@ header
 /*HUME Logo*/
 header .logo
 {
-  max-width: 20%;
+  max-width: 10%;
   max-height: 30%;
 }
 /*Button Navigation Bar (Burger Icon)*/
@@ -39,9 +40,57 @@ header .logo
   background-size: 30px;
   background-position: center;
   cursor: pointer;
-  filter: brightness(0.8) sepia(100) saturate(100000%) hue-rotate(311deg); 
-  
+  filter: brightness(0.8) sepia(100) saturate(100000%) hue-rotate(311deg);
 }
+/*Kontakt Formular Eingabefelder*/
+.kontakt-formular {
+  color:white;
+  position:relative;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #03a9f4;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:50%;
+  box-sizing: border-box;
+  outline:0;
+}
+#formular {
+  margin-left: 10%;
+  text-align: center;
+}
+#formular-text {
+  color:#03a9f4;
+}
+/*Absenden Button Kontaktformular*/
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 50%;
+  background:#03a9f4;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#03a9f4; }
+textarea {
+  height: 118px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+
+.feedback-input:focus { border:2px solid #03a9f4; }
 /*Button Navigation Bar Aktiv (X Icon)*/
 .toggle.active
 {
@@ -50,8 +99,15 @@ header .logo
   background-size: 25px;
   background-position: center;
   cursor: pointer;
-  
-  
+}
+.visionPicture {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /**/
 .showcase
@@ -67,13 +123,11 @@ header .logo
   background: #111;
   transition: 0.5s;
   z-index: 2;
-  
 }
 /**/
 .showcase.active
 {
   right: 300px;
-  
 }
 /**/
 .showcase video
@@ -122,7 +176,6 @@ header .logo
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
-  
 }
 /**/
 .text a
@@ -161,13 +214,11 @@ header .logo
 .menu ul
 {
   position: relative;
-  
 }
 /**/
 .menu ul li
 {
   list-style: none;
-  
 }
 /**/
 .menu ul li a
@@ -183,48 +234,11 @@ header .logo
 }
 @media (max-width: 991px)
 {
-  .showcase,
-  .showcase header
-  {
-    padding: 40px;
-    
-  }
+.showcase,
+.showcase header
+{
+  padding: 40px;
 }
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: rgba(255,203,28,10.1);;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #fff;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #03a9f4;
-  padding: 20px;
-  position: relative;
-  margin-left: 40%;
 }
 /* Datenschutz Text */
 .datenschutz {
@@ -236,14 +250,12 @@ input[type=submit]:hover {
   width: 70%;
   transform: translate(-50%) ;
 }
-
-.visionPicture {
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+.impressum {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  color: #fff;
+  width: 70%;
+  transform: translate(-50%) ;
 }

@@ -9,39 +9,31 @@
   <body>
   <section class="showcase">
     <header>
-      <h2 class="logo">Kontakt</h2>
+      <img class="logo" src="media/HUME_LOGO.png"></img>
       <div class="toggle"></div>
     </header>
-    <div class="container">
-      <form action="action_page.php">
     
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <br>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <br>
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-        <br>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    
+      <form id="formular">   
+        <p id="formular-text"><big>HUME GmbH<br>
+          Sachsendamm 4/5<br>
+          10829 Berlin <br>-<br>Sie wollen <big>für uns</big> oder <big>mit uns</big> arbeiten?<br>
+
+          Kontaktieren Sie uns.<br><br>
+        </big></p>
+        <input name="name" type="text" class="kontakt-formular" placeholder="Name" />   
+        <input name="email" type="text" class="kontakt-formular" placeholder="Email" />
+        <input name="unternehmen" type="text" class="kontakt-formular" placeholder="Unternehmen" />
+        <input name="telefonnummer" type="text" class="kontakt-formular" placeholder="Telefonnummer" />
+        <textarea name="text" class="kontakt-formular" placeholder="Ihre Nachricht"></textarea>
+        <input type="submit" value="Absenden"/>
       </form>
-    </div>
   </section>
   <div class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="vision.html">Vision</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
       <li><a href="datenschutz.html">Datenschutz</a></li>
     </ul>
   </div>
